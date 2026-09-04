@@ -1,6 +1,6 @@
 # 01 - MVP Arkanoid
 
-**Estado:** Approved
+**Estado:** Implementado
 **Depende de:** ninguno
 **Fecha:** 2026-09-04
 
@@ -176,19 +176,19 @@ gameState = {
 
 ## Criterios de aceptacion
 
-- [ ] `index.html` carga el juego sin errores de consola, sirviendo el directorio con un servidor estatico.
-- [ ] La pala arranca en `x:319, y:560`, se mueve con teclado (flechas o A/D) y con mouse, sin salir de `x: [0, 638]`, y su `y` nunca cambia.
-- [ ] La bola arranca en `x:400, y:552` con velocidad `dx:150, dy:-260` (magnitud 300px/s).
-- [ ] La bola rebota correctamente en paredes izquierda (`x<=8`), derecha (`x>=792`) y superior (`y<=8`), preservando magnitud de velocidad 300px/s.
-- [ ] La bola rebota en la pala con angulo variable segun el punto de impacto (formula de `hitOffset`).
-- [ ] Se renderizan **48 bloques (6 filas x 8 columnas)** con los 6 colores visuales de la tabla del Alcance, un color por fila.
-- [ ] Cada golpe a un bloque (golpes 1 a 4) actualiza su sprite visual de dano (`HIT_FRAMES`) sin destruirlo.
-- [ ] Al recibir el **5º golpe**, el bloque reproduce la animacion de destruccion de **5 frames** (`EXPLOSION_FRAMES`) y luego desaparece.
-- [ ] El score en el HUD aumenta 1 punto cada vez que se destruye un bloque, independientemente de su color.
-- [ ] Perder una bola (`ball.y - radius > 600`) resta 1 vida, visible en el HUD, y resetea pala/bola a sus coordenadas iniciales.
-- [ ] Al llegar a 0 vidas se muestra la pantalla de Game Over con opcion de reiniciar.
-- [ ] Al romper todos los bloques se muestra la pantalla de Victoria con opcion de reiniciar.
-- [ ] Reiniciar desde Game Over o Victoria vuelve el juego a su estado inicial jugable (pala/bola en coordenadas iniciales, score 0, 48 bloques restaurados).
+- [x] `index.html` carga el juego sin errores de consola, sirviendo el directorio con un servidor estatico.
+- [x] La pala arranca en `x:319, y:560`, se mueve con teclado (flechas o A/D) y con mouse, sin salir de `x: [0, 638]`, y su `y` nunca cambia.
+- [x] La bola arranca en `x:400, y:552` con velocidad `dx:150, dy:-260` (magnitud 300px/s).
+- [x] La bola rebota correctamente en paredes izquierda (`x<=8`), derecha (`x>=792`) y superior (`y<=8`), preservando magnitud de velocidad 300px/s.
+- [x] La bola rebota en la pala con angulo variable segun el punto de impacto (formula de `hitOffset`).
+- [x] Se renderizan **48 bloques (6 filas x 8 columnas)** con los 6 colores visuales de la tabla del Alcance, un color por fila.
+- [x] Cada golpe a un bloque (golpes 1 a 4) actualiza su sprite visual de dano (`HIT_FRAMES`) sin destruirlo.
+- [x] Al recibir el **5º golpe**, el bloque reproduce la animacion de destruccion de **5 frames** (`EXPLOSION_FRAMES`) y luego desaparece.
+- [x] El score en el HUD aumenta 1 punto cada vez que se destruye un bloque, independientemente de su color.
+- [x] Perder una bola (`ball.y - radius > 600`) resta 1 vida, visible en el HUD, y resetea pala/bola a sus coordenadas iniciales.
+- [x] Al llegar a 0 vidas se muestra la pantalla de Game Over con opcion de reiniciar.
+- [x] Al romper todos los bloques se muestra la pantalla de Victoria con opcion de reiniciar.
+- [x] Reiniciar desde Game Over o Victoria vuelve el juego a su estado inicial jugable (pala/bola en coordenadas iniciales, score 0, 48 bloques restaurados).
 
 ## Decisiones tomadas y descartadas
 

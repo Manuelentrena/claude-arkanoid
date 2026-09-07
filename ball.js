@@ -67,6 +67,7 @@ function updateBall( deltaTime ) {
     ball.dx = BALL_SPEED * Math.sin( angle );
     ball.dy = -BALL_SPEED * Math.cos( angle );
     ball.y = PADDLE_Y - ball.radius;
+    playSound( 'bounce' );
   }
 
   // Bola perdida (cae bajo el canvas, marco inferior no existe) — la vida se resta en game.js

@@ -108,6 +108,7 @@ function updateCollisions( now ) {
       if ( impactedBlock.hits >= MAX_HITS ) {
         impactedBlock.finalDamage = true;
         impactedBlock.finalDamageStartTime = now;
+        playSound( 'break' );
       }
     }
   }

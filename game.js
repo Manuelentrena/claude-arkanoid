@@ -11,6 +11,7 @@ const HUD_SCORE_X = 12; // alineado a la izquierda
 const HUD_LIVES_X = 564; // alineado a la derecha (= 576 - 12)
 
 const INITIAL_LIVES = 3;
+const MAX_DELTA_TIME = 1 / 30; // limite superior de deltaTime en segundos (33ms)
 
 let lives = INITIAL_LIVES;
 let status = 'playing'; // 'playing' | 'gameover' | 'victory'

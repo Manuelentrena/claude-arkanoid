@@ -14,6 +14,8 @@ const ball = {
   dx: BALL_INITIAL_DX,
   dy: BALL_INITIAL_DY,
   radius: BALL_RADIUS,
+  prevX: BALL_INITIAL_X,
+  prevY: BALL_INITIAL_Y,
 };
 
 function resetBall() {
@@ -21,9 +23,13 @@ function resetBall() {
   ball.y = BALL_INITIAL_Y;
   ball.dx = BALL_INITIAL_DX;
   ball.dy = BALL_INITIAL_DY;
+  ball.prevX = BALL_INITIAL_X;
+  ball.prevY = BALL_INITIAL_Y;
 }
 
 function updateBall( deltaTime ) {
+  ball.prevX = ball.x;
+  ball.prevY = ball.y;
   ball.x += ball.dx * deltaTime;
   ball.y += ball.dy * deltaTime;
 

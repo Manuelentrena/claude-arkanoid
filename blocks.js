@@ -30,6 +30,9 @@ function createBlocks() {
         exploding: false,
         explosionFrame: 0,
         explosionStartTime: 0,
+        inContact: false,
+        finalDamage: false,
+        finalDamageStartTime: 0,
       } );
     }
   }

@@ -7,7 +7,7 @@
 
   function loop( now ) {
     if ( lastTime === null ) lastTime = now;
-    const deltaTime = ( now - lastTime ) / 1000;
+    const deltaTime = Math.min( ( now - lastTime ) / 1000, MAX_DELTA_TIME );
     lastTime = now;
 
     updateGame( deltaTime, now );

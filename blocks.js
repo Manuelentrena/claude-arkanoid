@@ -1,13 +1,13 @@
 // blocks.js — layout fijo de bloques: grid 6 filas x 8 columnas, un color por fila.
 
-const BLOCK_WIDTH = 32;
-const BLOCK_HEIGHT = 16;
+const BLOCK_WIDTH = 48;
+const BLOCK_HEIGHT = 24;
 const BLOCK_ROWS = 6;
 const BLOCK_COLS = 8;
 const BLOCK_GAP = 4;
-const BLOCK_GRID_WIDTH = BLOCK_COLS * BLOCK_WIDTH + ( BLOCK_COLS - 1 ) * BLOCK_GAP; // 284
-const BLOCK_GRID_START_X = ( 800 - BLOCK_GRID_WIDTH ) / 2; // 258
-const BLOCK_GRID_START_Y = 60;
+const BLOCK_GRID_WIDTH = BLOCK_COLS * BLOCK_WIDTH + ( BLOCK_COLS - 1 ) * BLOCK_GAP; // 412
+const BLOCK_GRID_START_X = ( 576 - BLOCK_GRID_WIDTH ) / 2; // 82
+const BLOCK_GRID_START_Y = 112; // = 72 + PLAY_AREA_TOP(40): hueco de 48px bajo el marco superior (y:64)
 
 // Orden de filas (superior a inferior) segun la tabla de colores del spec.
 const BLOCK_ROW_COLORS = [ 'hotpink', 'yellow', 'magenta', 'green', 'cyan', 'red' ];

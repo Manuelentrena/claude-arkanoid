@@ -13,6 +13,7 @@
     updateGame( deltaTime, now );
 
     ctx.clearRect( 0, 0, canvas.width, canvas.height );
+    drawBorder( ctx );
     drawBlocks( ctx );
     drawPaddle( ctx );
     drawBall( ctx );

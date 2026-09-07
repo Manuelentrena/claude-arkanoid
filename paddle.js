@@ -1,11 +1,11 @@
 // paddle.js — pala: constantes, estado, input (teclado + mouse) y dibujo.
 
-const PADDLE_WIDTH = 162;
-const PADDLE_HEIGHT = 14;
-const PADDLE_Y = 560;
-const PADDLE_MIN_X = 0;
-const PADDLE_MAX_X = 800 - PADDLE_WIDTH; // 638
-const PADDLE_INITIAL_X = ( 800 - PADDLE_WIDTH ) / 2; // 319
+const PADDLE_WIDTH = 48;
+const PADDLE_HEIGHT = 12;
+const PADDLE_Y = 600;
+const PADDLE_MIN_X = 24; // = BORDER_THICKNESS
+const PADDLE_MAX_X = 576 - 24 - PADDLE_WIDTH; // 504
+const PADDLE_INITIAL_X = ( 576 - PADDLE_WIDTH ) / 2; // 264
 const PADDLE_SPEED = 480; // px/s
 
 const paddle = {

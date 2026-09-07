@@ -47,7 +47,7 @@ const EXPLOSION_FRAMES = {
 const EXPLOSION_DURATION = 150; // ms totales para reproducir los 5 EXPLOSION_FRAMES
 
 const SPRITES = {
-  paddle: { sx: 32, sy: 112, sw: 162, sh: 14 },
+  paddle: { sx: 112, sy: 80, sw: 48, sh: 12 },
   ball: { sx: 32, sy: 32, sw: 16, sh: 16 },
   blocks: {
     gray: { sx: 32, sy: 288, sw: 32, sh: 16 },
